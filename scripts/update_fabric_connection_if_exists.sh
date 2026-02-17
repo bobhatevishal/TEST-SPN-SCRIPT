@@ -4,7 +4,7 @@ source "$(dirname "$0")/lib/utils.sh"
 
 check_var "FINAL_OAUTH_SECRET"
 check_var "TARGET_SPN_DISPLAY_NAME"
-#check_var "TARGET_APPLICATION_ID"
+check_var "TARGET_APPLICATION_ID"
 
 # Gateway ID (Make configurable or use default)
 GATEWAY_ID="${FABRIC_GATEWAY_ID:-34377033-6f6f-433a-9a66-3095e996f65c}"
