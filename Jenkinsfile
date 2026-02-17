@@ -17,6 +17,7 @@ pipeline {
         DATABRICKS_HOST       = 'https://accounts.azuredatabricks.net'
         KEYVAULT_NAME         = credentials('keyvault-name')
         ACCOUNT_ID            = credentials('databricks-account-id')
+        DATABRICKS_RESOURCE_ID = credentials('DATABRICKS_RESOURCE_ID')
 
         // --- Service Principal (Restored to your original variables) ---
         // These will be automatically available to all shell scripts as env vars
