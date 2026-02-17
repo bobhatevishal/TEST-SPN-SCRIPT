@@ -89,7 +89,7 @@ pipeline {
                                     // 5. Update Fabric
                                     sh './scripts/update_fabric_connection_if_exists.sh'
                                 }
-                                echo "=== Successfully Rotated ${spn} ==="
+                               // echo "=== Successfully Rotated ${spn} ==="
 
                             } catch (Exception e) {
                                 echo "!!! FAILED processing ${spn} !!!"
