@@ -64,5 +64,4 @@ EOF
 $FAB api connections/$CONNECTION_ID -A fabric -X patch -i update.json >/dev/null
 
 log_info "Fabric connection updated successfully."
-echo "=== Successfully Rotated ${spn} ==="
 rm -f update.json
