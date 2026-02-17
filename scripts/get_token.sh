@@ -2,7 +2,7 @@
 source "$(dirname "$0")/lib/utils.sh"
 
 # Configuration
-DATABRICKS_RESOURCE_ID="2ff814a6-3304-4ab8-85cb-cd0e6f879c1d"
+
 
 log_info "Starting Azure Authentication..."
 
