@@ -5,7 +5,7 @@ pipeline {
         timestamps()                  // Add time to console logs
         timeout(time: 1, unit: 'HOURS') // Prevent hanging jobs
         disableConcurrentBuilds()     // Prevent race conditions on shared resources
-        ansiColor('xterm')            // Pretty colors in logs
+       // ansiColor('xterm')            // Pretty colors in logs
     }
 
     parameters {
