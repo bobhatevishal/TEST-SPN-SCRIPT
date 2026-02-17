@@ -27,7 +27,7 @@ pipeline {
         AZURE_SUBSCRIPTION_ID = credentials('azure-subscription-id')
 
         // --- Fabric Configuration ---
-        FABRIC_WORKSPACE_ID   = 'yo782d76e6-7830-4038-8613-894916a67b22'
+       // FABRIC_WORKSPACE_ID   = 'yo782d76e6-7830-4038-8613-894916a67b22'
     }
 
     stages {
