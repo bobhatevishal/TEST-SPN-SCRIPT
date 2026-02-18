@@ -4,10 +4,10 @@ source "$(dirname "$0")/lib/utils.sh"
 # Load State
 if [ -f db_env.sh ]; then source ./db_env.sh; else log_error "db_env.sh missing"; exit 1; fi
 
-check_var "DATABRICKS_HOST"
-check_var "ACCOUNT_ID"
-check_var "TARGET_SPN_DISPLAY_NAME"
-check_var "DATABRICKS_TOKEN"
+# check_var "DATABRICKS_HOST"
+# check_var "ACCOUNT_ID"
+# check_var "TARGET_SPN_DISPLAY_NAME"
+# check_var "DATABRICKS_TOKEN"
 
 log_info "Fetching Internal ID for SPN: $TARGET_SPN_DISPLAY_NAME"
 
