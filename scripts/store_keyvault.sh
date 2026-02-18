@@ -2,10 +2,10 @@
 source "$(dirname "$0")/lib/utils.sh"
 [ -f db_env.sh ] && source ./db_env.sh
 
-check_var "KEYVAULT_NAME"
-check_var "TARGET_SPN_DISPLAY_NAME"
-check_var "FINAL_OAUTH_SECRET"
-check_var "TARGET_APPLICATION_ID"
+# check_var "KEYVAULT_NAME"
+# check_var "TARGET_SPN_DISPLAY_NAME"
+# check_var "FINAL_OAUTH_SECRET"
+# check_var "TARGET_APPLICATION_ID"
 
 # Sanitize name
 CLEAN_NAME=$(echo "$TARGET_SPN_DISPLAY_NAME" | tr ' ' '-')
