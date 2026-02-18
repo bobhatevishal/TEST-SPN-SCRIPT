@@ -2,9 +2,9 @@
 source "$(dirname "$0")/lib/utils.sh"
 [ -f db_env.sh ] && source ./db_env.sh
 
-check_var "DATABRICKS_INTERNAL_ID"
-check_var "ACCOUNT_ID"
-check_var "DATABRICKS_TOKEN"
+# check_var "DATABRICKS_INTERNAL_ID"
+# check_var "ACCOUNT_ID"
+# check_var "DATABRICKS_TOKEN"
 
 log_info "Fetching secrets to purge for SPN ID: $DATABRICKS_INTERNAL_ID"
 
