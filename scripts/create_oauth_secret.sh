@@ -10,11 +10,6 @@ else
     exit 1
 fi
 
-# Validation
-# check_var "TARGET_SPN_DISPLAY_NAME"
-# check_var "DATABRICKS_INTERNAL_ID"
-# check_var "DATABRICKS_TOKEN"
-# check_var "ACCOUNT_ID"
 
 log_info "Creating OAuth Secret for: $TARGET_SPN_DISPLAY_NAME ($DATABRICKS_INTERNAL_ID)"
 
