@@ -5,7 +5,7 @@ pipeline {
         timestamps()                  // Add time to console logs
         timeout(time: 1, unit: 'HOURS') // Prevent hanging jobs
         disableConcurrentBuilds()     // Prevent race conditions on shared resources
-        // ansiColor('xterm')         // Commented out to prevent "Invalid option" error
+    
     }
 
     parameters {
@@ -20,14 +20,14 @@ pipeline {
         DATABRICKS_RESOURCE_ID = credentials('DATABRICKS_RESOURCE_ID')
 
         // --- Service Principal (Restored to your original variables) ---
-        // These will be automatically available to all shell scripts as env vars
+
         AZURE_CLIENT_ID       = credentials('azure-client-id')
         AZURE_CLIENT_SECRET   = credentials('azure-client-secret')
         AZURE_TENANT_ID       = credentials('azure-tenant-id')
         AZURE_SUBSCRIPTION_ID = credentials('azure-subscription-id')
 
         // --- Fabric Configuration ---
-       // FABRIC_WORKSPACE_ID   = 'yo782d76e6-7830-4038-8613-894916a67b22'
+    
     }
 
     stages {
@@ -38,8 +38,8 @@ pipeline {
                     sh 'chmod +x scripts/*.sh scripts/lib/*.sh'
                     
                     // Generate initial token
-                    // No need for 'withEnv' here anymore because AZURE_CLIENT_ID 
-                    // and AZURE_CLIENT_SECRET are already defined globally above.
+                     
+                    
                     sh './scripts/get_token.sh'
                 }
             }
