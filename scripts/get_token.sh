@@ -6,11 +6,6 @@ source "$(dirname "$0")/lib/utils.sh"
 
 log_info "Starting Azure Authentication..."
 
-# Validate inputs
-# check_var "AZURE_CLIENT_ID"
-# check_var "AZURE_CLIENT_SECRET"
-# check_var "AZURE_TENANT_ID"
-
 # 1. Login with Service Principal
 az login --service-principal \
   --username "$AZURE_CLIENT_ID" \
